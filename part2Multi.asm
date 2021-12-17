@@ -1,8 +1,8 @@
 main:	
 	#agregamos el numero a ser multiplicado
-	addi $t0,$zero,12 #<- dato 1
+	addi $t0,$zero,14 #<- dato 1
 	#agregamos la multiplicación
-	add $t1,$zero,2 #<-dato 2
+	add $t1,$zero,8 #<-dato 2
 
 	
 	

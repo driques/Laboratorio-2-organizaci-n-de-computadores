@@ -1,14 +1,17 @@
 main:	
 	#agregamos el numero factorial
-	addi $t0,$zero,10 #<- dato 1
+	addi $t0,$zero,0#<- dato 1
 	#Se guardan en variables externas para no perderlas
 	#durante la multiplicación
 	subi $t3,$t0,1 
 	add $t1,$zero,$t3
 	#se empieza la primera multiplicación
+	beqz $t0,zeroFact
 	j multi
 
-
+zeroFact:
+	addi $t0,$t0,1
+	j exit
 
 	
 factorial:
